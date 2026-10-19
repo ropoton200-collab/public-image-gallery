@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Public Image Gallery</title>
+  <meta name="description" content="A public gallery of original images, listed by upload order and date.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">PUBLIC • NO VIEWER LOGIN</p>
+      <h1>Public Image Gallery</h1>
+      <p class="subtitle">Images are shown with their upload number and date.</p>
+    </div>
+    <a class="button secondary" href="admin.html" rel="nofollow">Owner Upload</a>
+  </header>
+
+  <main class="wrap">
+    <section class="toolbar" aria-label="Gallery controls">
+      <strong id="count">0 images</strong>
+      <label>
+        Sort
+        <select id="sort">
+          <option value="newest">Newest upload first</option>
+          <option value="oldest">Oldest upload first</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="gallery" class="gallery" aria-live="polite">
+      <div class="empty">
+        <h2>No images yet</h2>
+        <p>The owner can add the first image from the Owner Upload page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Publicly accessible images may be crawled by search engines. Indexing and ranking are controlled by the search engine.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
